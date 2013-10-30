@@ -1,0 +1,102 @@
+/* Trains search stylesheet */
+
+/* search nav - steps of train search */
+#search-nav { z-index: 2; position: relative; height: 25px; margin-top: 2px; }
+#search-nav li { list-style: none; float: left; cursor: pointer; display: block; height: 25px; width: 86px; padding-top: 5px; padding-left: 11px; font-size: 12px;  text-decoration: none; color: #42413f; }
+#search-nav li.divider { width: 14px; cursor: default; background: url("../images/icon_searchnav_div.png") 50% 50% no-repeat; }
+#search-nav li.first { width: 100px; padding-left: 24px;  }
+#search-nav li.active, #search-nav li:hover { color: #2887bb; }
+
+/* 8 bottons on top right */
+#trains-top-extra { z-index: 3; position: absolute; right: 0px; top: 0px;}
+#trains-top-extra .extra-block { float: left;  width: 213px; height: 146px; padding-left: 6px; padding-top: 6px; }
+#trains-top-extra .extra-block .btn { float: left; width: 99px; height: 49px; margin-right: 3px; margin-bottom: 3px; border: 1px solid #d5d5d5; border-radius: 3px; }
+#trains-top-extra .extra-block .btn a { display: block; width: 98px; height: 46px; padding-left: 26px; display: table-cell; vertical-align: middle; text-align: center; text-decoration: none; font-size: 11px; color: #42413f; }
+/* disabled/off style */
+#trains-top-extra .extra-block .title { float: left; width: 100%; height: 26px; padding-top: 0px; font-size: 16px; color: #9f9f9f; }
+#trains-top-extra .extra-block .b1 a { background: url("../images/buttons/timetable_disabled.png") 7px 50% no-repeat;  }
+#trains-top-extra .extra-block .b2 a { background: url("../images/buttons/map_disabled.png") 4px 50% no-repeat;  }
+#trains-top-extra .extra-block .b3 a { background: url("../images/buttons/reload_disabled.png") 4px 50% no-repeat;  }
+#trains-top-extra .extra-block .b4 a { background: url("../images/buttons/notification_disabled.png") 7px 50% no-repeat;  }
+#trains-top-extra .extra-block .b5 a { background: url("../images/buttons/favorite_disabled.png") 7px 50% no-repeat;  }
+#trains-top-extra .extra-block .b6 a { background: url("../images/buttons/sms_disabled.png") 11px 50% no-repeat;  }
+#trains-top-extra .extra-block .b7 a { background: url("../images/buttons/share_disabled.png") 7px 50% no-repeat;  }
+#trains-top-extra .extra-block .b8 a { background: url("../images/buttons/taxi_disabled.png") 4px 50% no-repeat;  }
+/* active/on style */
+#trains-top-extra .active .title { float: left; width: 100%; height: 26px; padding-top: 0px; font-size: 16px; color: #FFF; }
+#trains-top-extra .active .b1 a { background: url("../images/buttons/timetable.png") 7px 50% no-repeat;  }
+#trains-top-extra .active .b2 a { background: url("../images/buttons/map.png") 4px 50% no-repeat;  }
+#trains-top-extra .active .b3 a { background: url("../images/buttons/reload.png") 4px 50% no-repeat;  }
+#trains-top-extra .active .b4 a { background: url("../images/buttons/notification.png") 7px 50% no-repeat;  }
+#trains-top-extra .active .b5 a { background: url("../images/buttons/favorite.png") 7px 50% no-repeat;  }
+#trains-top-extra .active .b6 a { background: url("../images/buttons/sms.png") 11px 50% no-repeat;  }
+#trains-top-extra .active .b7 a { background: url("../images/buttons/share.png") 7px 50% no-repeat;  }
+#trains-top-extra .active .b8 a { background: url("../images/buttons/taxi.png") 4px 50% no-repeat;  }
+
+
+/* page ad block */
+#ad-block { position: absolute; right: 0px; top: 180px; }
+
+/* top section */
+#trains-top { z-index: 1; position: relative; height: 121px; padding: 19px 22px; }
+
+/* display correct elements */
+#search-train-wrapper {  }
+#result-train-wrapper { display: none;}
+#search-train-wrapper .search-results-text { display: none; }
+
+/* train search input/output area */
+#trains-top .input-wrap { position: relative; width: 496px; height: 48px; padding: 5px; border: 1px solid #bfbfbf; border-radius: 4px;  }
+#trains-top .input-wrap input { width: 396px; height: 36px; padding: 0px 10px; font-size: 14px;  font-weight: bold;  color: 42413f; border: 1px solid #cdcdcd; border-radius: 3px; box-shadow: 0px 1px 0px #e9e9e9; }
+#trains-top .input-wrap a { position: absolute; right: 7px; top: 5px; display: block; width: 83px; height: 36px; padding-top: 7px; text-align: center; text-decoration: none; font-size: 15px; color: #7e7e7e; border: 1px solid #c5c5c5; border-radius: 3px; box-shadow: 0px 1px 1px #cacaca; }
+#trains-top .input-wrap a:hover { border: 1px solid #838383; }
+#trains-top .input-footer { color: #ffffff; margin-top: 3px; line-height: 20px; font-size: 13px; }
+#trains-top .output-wrap { position: relative; width: 515px; height: 60px; border: 1px solid #419ecd; border-radius: 3px; color: #fff; }
+#trains-top .output-wrap .icon { position: absolute; width: 54px; height: 54px; left: 0px; top: 2px; background: url("../images/icon_timetable.png") 50% 50% no-repeat; }
+#trains-top .output-wrap .name { position: absolute; left: 55px; top: 8px; font-size: 16px; }
+#trains-top .output-wrap .dest { position: absolute; left: 55px; top: 26px; font-size: 13px; font-weight: normal; }
+#trains-top .output-footer { position: relative; width: 514px; text-align: right; margin-top: 5px; }
+#trains-top .output-footer a { text-decoration: none; color: #ffffff; }
+#trains-top .output-footer a:hover { text-decoration: none; color: #daecf5; }
+
+
+
+/* train results/output area */
+#trains-bottom { position: relative; height: 425px; }
+
+#tooltip-container { position: absolute; left: 0px; top: 0px; width: 100%; height: 700px;  }
+.row-tooltip { z-index: 89; display: none; position: absolute; width: 250px; height: 180px; color: #1f1f1f; }
+.row-tooltip .tooltip-handle { z-index: 91; position: absolute; top: 66px; left: 0px; width: 71px; height: 46px; border-left: 1px solid #cfcfcf; border-bottom: 1px solid #404040; border-radius: 3px 0 0 3px; background: #efefef; box-shadow: 0px 1px 0px #cfcfcf; }
+.row-tooltip .tooltip { z-index: 90;  position: absolute; top: 0px; left: 70px; width: 180px; height: 180px; border-left: 1px solid #cfcfcf; border-right: 1px solid #cfcfcf; border-bottom: 1px solid #404040; border-radius: 3px; background: #efefef; box-shadow: 0px 1px 0px #cfcfcf; }
+.row-tooltip .tooltip-title {  height: 48px; padding-left: 32px; padding-top: 13px; font-size: 16px; background: url("../images/icon_tooltip_info.png") 10px 15px no-repeat; }
+.row-tooltip .tooltip-content { font-size: 12px; padding: 0 5px 0px 15px; height: 125px; overflow: hidden; }
+
+#select-train { display: none; }
+#select-date { display: none; }
+
+/* setup search results grid/table */
+#trains-bottom .select { width: 564px; padding-bottom: 25px; }
+#trains-bottom .title { position: relative; height: 37px; padding-top: 9px; padding-left: 23px; font-size: 17px; color: #42413f; border-bottom: 1px solid #cdcdcd; }
+#trains-bottom .row { position: relative; width: 98%; height: 70px; margin-bottom: 10px; color: #31333f; border-radius: 3px; box-shadow: 0px 0px 1px #d5d5d5; cursor: pointer; }
+#trains-bottom .row:hover { color: #fff; }
+#trains-bottom .row-info { z-index: 99; position: absolute; width: 45px; height: 45px; right: 10px; top: 12px; }
+#trains-bottom .row-info a { z-index: 99; display: block; width: 45px; height: 45px; background: url("../images/icon_row_info.png") 50% 50% no-repeat; }
+/* train table */
+#select-train .table-wrap { position: relative; height: 345px; width: 525px; margin-top: 13px; margin-left: 19px; border-radius: 4px; padding: 15px 8px 15px 15px;  }
+#select-train .table { height: 312px; overflow-y: auto; }
+#select-train .row-bg { position: absolute; width: 24px; height: 26px; left: 12px; top: 23px; background: url("../images/icon_row_star.png") 50% 50% no-repeat; }
+#select-train .row:hover .row-bg { background: url("../images/icon_row_star_hover.png") 50% 50% no-repeat; }
+#select-train .row-id { position: absolute; left: 50px; top: 7px; font-size: 15px;}
+#select-train .row-name { position: absolute; left: 110px; top: 7px; font-size: 16px; }
+#select-train .row-dest { position: absolute; left: 50px; top: 27px; font-weight: normal; font-size: 12px; }
+#select-train .row-date { position: absolute; left: 52px; top: 47px; font-size: 12px; }
+#select-train .row-arrow { position: relative; width: 16px; height: 10px; background: url("../images/icon_dest_arrow.png") 50% 50% no-repeat; }
+#select-train .row:hover .row-arrow { background: url("../images/icon_dest_arrow_hover.png") 50% 50% no-repeat; }
+/* date table */
+#select-date .table-wrap { position: relative; height: 345px; width: 525px; margin-top: 13px; margin-left: 19px; border-radius: 4px; padding: 15px 8px 15px 15px;  }
+#select-date .table { height: 312px; overflow-y: auto; }
+#select-date .row-bg { position: absolute; width: 24px; height: 26px; left: 12px; top: 23px; background: url("../images/icon_row_train.png") 50% 50% no-repeat; }
+#select-date .row:hover .row-bg { background: url("../images/icon_row_train_hover.png") 50% 50% no-repeat; }
+#select-date .row-startdate { position: absolute; left: 50px; top: 10px; font-size: 16px; }
+#select-date .row-dest { position: absolute; left: 50px; top: 30px; font-weight: normal; font-size: 13px; }
+#select-date .row-enddate { position: absolute; left: 50px; top: 46px; font-weight: normal; font-size: 13px; }

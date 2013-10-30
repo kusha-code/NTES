@@ -1,0 +1,30 @@
+/* Stations search stylesheet */
+/* modifies some values shared from: trains.css */
+
+/* train search input/output area */
+#trains-top .output-wrap .name { position: absolute; left: 55px; top: 16px; font-size: 18px; }
+
+.row-tooltip .tooltip-handle { z-index: 91; position: absolute; top: 66px; left: 0px; width: 71px; height: 39px; border-left: 1px solid #cfcfcf; border-bottom: 1px solid #404040; border-radius: 3px 0 0 3px; background: #efefef; box-shadow: 0px 1px 0px #cfcfcf; }
+
+/* setup search results grid/table */
+#trains-bottom .select { width: 564px; padding-bottom: 25px; }
+#trains-bottom .title { position: relative; height: 41px; padding-top: 11px; padding-left: 25px; font-size: 17px; color: #42413f; border-bottom: 1px solid #cdcdcd; }
+#trains-bottom .row { position: relative; width: 98%; height: 38px; margin-bottom: 6px; color: #31333f; border-radius: 3px; box-shadow: 0px 0px 1px #d5d5d5; cursor: pointer; }
+#trains-bottom .row:hover { color: #fff; }
+#trains-bottom .row-info { z-index: 99; position: absolute; width: 45px; height: 40px; right: 10px; top: 0px; }
+#trains-bottom .row-info a { z-index: 99; display: block; width: 45px; height: 40px; background: url("../images/icon_row_info.png") 50% 50% no-repeat; }
+/* train table */
+#select-train .table-wrap { position: relative; height: 340px; width: 525px; margin-top: 15px; margin-left: 20px; border-radius: 4px; padding: 15px 8px 15px 15px;  }
+#select-train .table { height: 304px; overflow-y: auto; }
+#select-train .row-bg { position: absolute; width: 24px; height: 26px; left: 12px; top: 7px; background: url("../images/icon_row_star.png") 50% 50% no-repeat; }
+#select-train .row:hover .row-bg { background: url("../images/icon_row_star_hover.png") 50% 50% no-repeat; }
+#select-train .row-name { position: absolute; left: 50px; top: 10px; font-size: 15px; }
+/* date table */
+#select-date .time-span { position: absolute; top: 14px; right: 40px; font-weight: normal; font-size: 13px;  }
+#select-date .radio-option { float: left; margin-right: 15px; }
+#select-date .radio-desc { cursor: pointer; font-size: 13px; }
+#select-date .fake-radio { margin-right: 5px; }
+#select-date .time-span input { margin-left: 10px; }
+#select-date .table-wrap { position: relative; height: 340px; width: 525px; margin-top: 15px; margin-left: 20px; border-radius: 4px; padding: 15px 8px 15px 15px;  }
+#select-date .table { height: 304px; overflow-y: auto; }
+#select-date .row-name { position: absolute; left: 20px; top: 10px; font-size: 15px; }

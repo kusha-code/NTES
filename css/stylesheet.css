@@ -1,0 +1,97 @@
+/* Setup some defaults */
+* {	
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+img { border: 0; }
+.clearfix { clear: both; }
+a, select, input, textarea { outline: none; }
+input { font-family: "Trebuchet MS"; font-weight: bold; }
+
+
+/* Global page layout structure */
+body { font-size: 14px; font-style: none; font-weight: bold; font-family: "Trebuchet MS", Helvetica, Arial; }
+
+#wrapper { position: relative; }
+#page {
+    width: 990px; /* main page width */
+    margin: 0px auto; /* center-aligned page */
+}
+
+/* header */
+#header { position: relative; height: 137px; overflow: hidden; }
+#header-logo { z-position: 1; position: absolute; top: 2px; left: 0px; }
+#header-beta { z-position: 90; position: absolute; height: 30px; width: 39px; top: 0px; left: 200px; background: url("../images/icon_beta.png") 50% 50% no-repeat; display: none; }
+#header-ad { position: absolute; top: 5px; right: 0px; }
+/* login area */
+#header-login { position: absolute; width: 520px; height: 30px; top: 100px; right: 0px; }
+#header-login div { float: left; }
+.login-div { margin: 0 4px; }
+.login-div a { display: block; height: 23px; width: 65px; font-size: 12px; line-height: 22px; text-align: center; text-decoration: none; color: #fdfdfd; text-shadow: 1px 1px #de8d17; box-shadow: 0px 2px #d4d6d7; border: 1px solid #e9a600; border-radius: 3px; }
+.username-div, .password-div { height: 23px; width: 97px; overflow: hidden; margin: 0 3px; padding-left: 4px; border: 1px solid #b8b8b8; border-radius: 3px; }
+.username-div input, .password-div input { height: 20px; width: 76px; font-size: 11px; font-weight: bold; color: #b5b5b5; background: none; border: 0; }
+.username-div input:focus, .password-div input:focus { color: #555555; }
+.username-div { background: url("../images/icon_username.png") 98% 50% no-repeat; }
+.password-div { background: url("../images/icon_password.png") 98% 50% no-repeat; }
+#password-clear { display: none; }
+.search-div { position: relative; height: 23px; width: 150px; overflow: hidden; margin: 0 3px; padding: 1px 10px 0px 10px; border: 1px solid #b8b8b8; border-radius: 12px; box-shadow: 0px 2px 1px #d3d3d3 inset, 0px 1px 1px #d3d3d3; }
+.search-div input { height: 20px; width: 135px; font-size: 11px; font-weight: bold; color: #b5b5b5; background: none; border: 0; }
+.search-div input:focus { color: #555555; }
+.search-div a { position: absolute; right: 1px; top: 2px; display: block; height: 18px; width: 18px; background: url("../images/icon_search.png") 50% 50% no-repeat; }
+.signup-div { font-size: 10px; font-weight: normal; line-height: 11px; }
+.signup-div a { color: #134f75; }
+.signup-div a:hover { color: #134ff5; }
+
+/* top tab nav */
+#tab-nav { position: relative; height: 36px; overflow: hidden; margin-bottom: -2px; z-index: 1; }
+#tab-nav li { list-style: none; float: left; margin-right: 2px; }
+#tab-nav .home-icon { width: 100%; height: 100%; background: url("../images/icon_home.png") 50% 50% no-repeat; }
+#tab-nav li.active .home-icon, #tab-nav .home-icon:hover { background: url("../images/icon_home_hover.png") 50% 50% no-repeat; }
+#tab-nav li a { display: block; height: 36px; width: 98px; font-size: 14px; text-align: center; line-height: 32px; text-decoration: none; color: #42413f; text-shadow: 0px 1px 1px #c2c2c2; border: 1px solid #d5d5d5; border-radius: 3px 3px 0 0;}
+#tab-nav li.active a, #tab-nav li a:hover { color: #fdfdfd; border: 1px solid #72ade4; text-shadow: 0px 1px #114fa3; }
+#tab-nav li.home-tab a { width: 45px; }
+/* page nav */
+.page-nav { position:relative; height: 40px; overflow: hidden; border-radius: 4px; z-index: 2; }
+.page-nav li { list-style: none; float: left; display: table; }
+.page-nav li a { display: block; height: 40px; width: 126px; padding: 0 12px; font-size: 14px; line-height: 16px; display: table-cell; vertical-align: middle; text-align: center; text-decoration: none; border-left: 1px solid #25a0da; color: #FDFDFD; text-shadow: 0px 1px 1px #114fa3; }
+.page-nav li a:hover, .page-nav li.active a  { background: url("../images/icon_pagenav.png") 50% 100% no-repeat; }
+
+
+/* page contents */
+#page-content { position: relative; }
+
+/* custom input stylse */
+.style-checkbox { display: block; float: left; width: 16px; height: 18px;  margin-top: 1px; cursor: pointer; background: url("../images/icon_checkbox.png") 0px 0px no-repeat; }
+.style-checkbox-checked { display: block; float: left; width: 16px; height: 18px; margin-top: -3px; cursor: pointer; background: url("../images/icon_checkbox_checked.png") no-repeat; }
+.style-radio { display: block; float: left; width: 14px; height: 14px; cursor: pointer; background: url("../images/icon_radio.png") 0px 0px no-repeat; }
+.style-radio-checked { display: block; float: left; width: 14px; height: 14px; cursor: pointer; background: url("../images/icon_radio_checked.png") no-repeat; }
+
+
+/* right-side social buttons + ad */
+#right-blocks { position: absolute; height: 900px; width: 160px; top: 0px; right: 0px; }
+#right-blocks a { text-decoration: none; }
+#right-blocks .right-twitter, #right-blocks .right-facebook { position: relative; height: 55px; margin-bottom: 3px; padding-top: 8px; padding-left: 50px; line-height: 14px; text-align: center; color: #727170; border: 1px solid #d5d5d5; border-bottom: 1px solid #e2e2e2; border-radius: 3px; box-shadow: 0px 1px 0px #e6e6e6; }
+#right-blocks .small { font-size: 9px; }
+#right-blocks .large { font-size: 18px; }
+#right-blocks .right-twitter .bg { position: absolute; left: 6px; top: 1px; width: 50px; height: 51px; background: url("../images/icon_twitter2.png") 50% 50% no-repeat; }
+#right-blocks .right-facebook .bg { position: absolute; left: 6px; top: 0px; width: 50px; height: 51px; background: url("../images/icon_facebook2.png") 50% 50% no-repeat; }
+
+
+/* footer */
+#footer { position: relative; height: 255px; margin: 12px 0 0 0; overflow: hidden; border-top: 1px solid #c9c9c9; }
+#footer-bar { z-index: -1; position: absolute; top: 10px; height: 35px; width: 100%; border: 1px solid #72ade4; border-radius: 4px; }
+#footer-twitter { position: absolute; height: 54px; width: 66px; top: 5px; left: 6px; background: url("../images/icon_twitter.png") 50% 50% no-repeat; }
+#footer-facebook { position: absolute; height: 54px; width: 66px; top: 5px; left: 86px; background: url("../images/icon_facebook.png") 50% 50% no-repeat; }
+#footer-twitter a, #footer-facebook a { display: block; height: 100%; width: 100%;}
+#footer-twitter:hover, #footer-facebook:hover { background-position: 50% 100%; }
+#footer .fb-like { position: absolute; top: 15px; left: 165px; }
+#footer-links { position: absolute; height:35px; top: 17px; right: 10px; color: #fdfdfd; }
+#footer-links a { color: #fdfdfd; font-weight: normal; font-size: 12px; }
+#footer-links a:hover { color: #cadfef; }
+#footer-ad { position: absolute; top: 60px; left: 0px; }
+#footer-extra { position: absolute; height: 150px; width: 250px; top: 60px; right: 0px; font-size: 12px; font-weight: normal; color: #8e9094; }
+#footer-extra .footer-extra-text { height: 28px; }
+#footer-extra .footer-logo { float: left; }

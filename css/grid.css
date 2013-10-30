@@ -1,0 +1,79 @@
+/* Home/Index stylesheet */
+
+
+/* slider left/right + pagintion */
+#main-slider-control { position: relative; height: 32px; }
+#main-slider-nav { position: absolute; width: 70px; height: 32px; top: 3px; overflow: hidden; }
+#main-slider-nav a { float: left; display: block; width: 26px; height: 26px; margin-right: 2px; }
+#main-slider-left { background: url("../images/icon_pagi_left.png") 50% 50% no-repeat; }
+#main-slider-left:hover { background: url("../images/icon_pagi_left_hover.png") 50% 50% no-repeat; }
+#main-slider-right { background: url("../images/icon_pagi_right.png") 50% 50% no-repeat; }
+#main-slider-right:hover { background: url("../images/icon_pagi_right_hover.png") 50% 50% no-repeat; }
+#main-slider-select { position: absolute; top: 6px; right: 0px; }
+#main-slider-select a { float: left; display: block; width: 20px; height: 20px; background: url("../images/icon_pagi_simple.png") 50% 50% no-repeat; }
+#main-slider-select a:hover { background: url("../images/icon_pagi_simple_hover.png") 50% 50% no-repeat; }
+#main-slider-select a.active { background: url("../images/icon_pagi_simple_hover.png") 50% 50% no-repeat; }
+
+/* hide jQuery supplied elements from jquery.slider */
+.slider-pagination, .slider-prev, .slider-next { display: none; }
+
+/* top blocks of grid: search trains / arrivals content */
+#top-title-left { width: 100%; height: 40px; }
+#top-title-right { width: 100%; height: 40px; }
+#top-title-left, #top-title-right { padding-left: 20px; font-size: 21px; line-height: 40px; color: #727170; }
+#top-block-left { width: 100%; height: 226px; }
+#top-block-right { width: 100%; height: 226px; }
+.top-inner { width: 100%; height: 100%; background: url("../images/gradient_top_block.png") 100% 3px no-repeat; }
+#top-block-left .top-inner { padding: 20px 30px; }
+#top-block-left .checks { position: relative; float: right; height: 30px; color: #ffffff }
+#top-block-left .checks input { width: 16px; height: 18px; margin-left: 30px; margin-right: 5px;  }
+#top-block-left .check-option { float: left; margin-left: 25px; }
+#top-block-left .check-desc { float: left; cursor: pointer; padding-left: 5px; font-size: 12px; }
+#top-block-left .inputs { text-align: right; margin-bottom: 11px; }
+#top-block-left .inputs input { width: 496px; height: 36px; padding: 0px 7px; font-weight: bold; font-size: 13px; color: #42413f; border: 1px solid #d5d5d5; border-radius: 4px; box-shadow: 0px 1px 0px #c9e5f3; }
+#top-block-left .buttons { position: relative; float: right; margin-top: 10px; }
+#top-block-left .top-btn, #top-block-right .top-btn { position: relative; display: block; width: 143px; height: 33px; text-decoration: none; text-align: center; padding-right: 25px; padding-top: 7px; font-size: 14px; color: #ffffff; border: 1px solid #171a23; border-radius: 4px; text-shadow: 1px 0px 1px #000000; box-shadow: 0px 1px 1px #2177a5; }
+#top-block-left .top-btn .arrow-icon, #top-block-right .top-btn .arrow-icon { position: absolute; right: 9px; top: 6px; width: 20px; height: 21px; background: url("../images/icon_button_icon.png") 50% 50% no-repeat; }
+#top-block-right .top-inner { padding: 48px 70px; }
+#top-block-right .buttons { position: relative; margin-bottom: 20px; }
+
+/* slider/grid content */
+#main-slider { position: relative; height: 804px; width: 825px; margin-top: 2px; overflow: hidden; }
+#main-slider .slide-container { height: 804px; width: 825px; display: none; }
+#main-slider .slide-page { display: block; height: 804px; width: 825px; }
+#main-slider .grid { float: left; position: relative; height: 266px; width: 273px; margin: 0 2px 2px 0; }
+#main-slider .hidden { float: left; position: relative; width: 0; height: 0; overflow: hidden; display: none; }
+#main-slider .grid-double { float: left; position: relative; height: 266px; width: 548px; margin: 0 2px 2px 0; }
+#main-slider .grid-triple { float: left; position: relative; height: 266px; width: 823px; margin: 0 2px 2px 0; }
+#main-slider .bg { z-index: 80; position: absolute; left: 0px; top: 0px; }
+#main-slider .bg, #main-slider .normal, #main-slider .hover { height: 266px; width: 273px; }
+#main-slider .bg img { width: 100%; height: 100%; }
+#main-slider .normal { z-index: 81; position: relative; padding: 16px; }
+#main-slider .hover { z-index: 82; position: absolute; left: 0px; top: 0px; padding: 16px; display: none; }
+#main-slider .expanded { z-index: 90; position: absolute; top: 0px; left: 0px; height: 100%; width: 548px; padding: 16px; display: none; }
+#main-slider .expand, #main-slider .close, #main-slider .expand-close { position: absolute; width: 20px; height: 25px; display: none;}
+#main-slider .expand { z-index: 83; top: 0; left: 0; background: url("../images/icon_expand.png") 50% 50% no-repeat; }
+#main-slider .close { z-index: 91; top: 0; right: 0; background: url("../images/icon_close.png") 50% 50% no-repeat; }
+#main-slider .expand-close { z-index: 91; top: 0; left: 0; background: url("../images/icon_expand.png") 50% 50% no-repeat; }
+#main-slider .expand a, #main-slider .close a, #main-slider .expand-close a { display: block; width: 100%; height: 100%; }
+/* slider content/text elements */
+#main-slider h1, #main-slider h2, #main-slider h3, #main-slider h4, #main-slider h5 { font-weight: normal; color: #ffffff; }
+#main-slider h1 { font-size: 46px; text-shadow: 1px 0px 1px #333; letter-spacing: -2px; }
+#main-slider h2 { font-size: 38px; text-shadow: 1px 0px 1px #333; letter-spacing: -2px; }
+#main-slider h3 { font-size: 20px; letter-spacing: -1px; }
+#main-slider h4 { font-size: 14px; line-height: 20px; }
+#main-slider h4 a { color: #ffffff; font-weight: bold; font-size: 16px; }
+#main-slider h4 a:hover { color: #afcffe; font-weight: bold; font-size: 16px; }
+#main-slider h5 { font-size: 12px; line-height: 16px; padding: 10px 10px 10px 0; letter-spacing: -1px;  }
+#main-slider h5 a { color: #ffffff; }
+#main-slider h5 a:hover { color: #afcffe;}
+#main-slider .btn1 { display: block; height: 27px; width: 81px; text-align: center; font-size: 12px; line-height: 24px; margin: 14px 0px; text-decoration: none; color: #fdfdfd; text-shadow: 1px 0px 1px #e29b21; border: 1px solid #e9a600; border-radius: 4px; box-shadow: 0px 2px #7a7a7a; }
+#main-slider .grid-link { display: block; height: 314px; width: 315px; }
+
+/* grid block internal slider */
+.internal-slide { width: 276px; height: 269px; }
+.internal-page { display: block; width: 276px; height: 269px; }
+.internal-slide-nav { z-index:84; position: absolute; height: 24px; bottom: 0px; left: 0px; padding-left: 12px; }
+.internal-slide-nav a { float: left; display: block; width: 20px; height: 24px; background: url("../images/icon_pagi_simple_small.png") 50% 50% no-repeat; }
+.internal-slide-nav a:hover { background: url("../images/icon_pagi_simple_small_hover.png") 50% 50% no-repeat; }
+.internal-slide-nav a.active { background: url("../images/icon_pagi_simple_small_hover.png") 50% 50% no-repeat; }

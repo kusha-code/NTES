@@ -1,0 +1,137 @@
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.jspContainer
+{
+	overflow: hidden;
+	position: relative;
+}
+
+.jspPane
+{
+	position: absolute;
+}
+
+.jspVerticalBar
+{
+	position: absolute;
+	top: 0;
+	right: 7px;
+	width: 11px;
+	height: 100%;
+	background: #fff;
+}
+
+.jspHorizontalBar
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 11px;
+	background: #bababa;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar *
+{
+	margin: 0;
+	padding: 0;
+}
+
+.jspCap
+{
+	display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+	float: left;
+}
+
+.jspTrack
+{
+	background: #bababa;
+	border-left: 1px solid #606060;
+	border-top: 1px solid #c0c0c0;
+	border-bottom: 1px solid #c0c0c0;
+	position: relative;
+}
+
+.jspDrag
+{
+	background: #e6e6e6 url("../images/icon_scroll_handle.png") 50% 50% no-repeat;
+	border-top: 1px solid #969696;
+	border-bottom: 1px solid #969696;
+	position: relative;
+	margin-top: -1px;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+.jspDrag:hover
+{
+	background: #efefef url("../images/icon_scroll_handle.png") 50% 50% no-repeat;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 100%;
+}
+
+.jspArrow
+{
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+
+.jspArrowUp
+{	
+	background: url("../images/icon_scroll_up.png") 50% 50% no-repeat;
+	positon: relative;
+}
+
+.jspArrowDown
+{
+	background: url("../images/icon_scroll_down.png") 50% 50% no-repeat;
+	bottom: 2px;
+	position: relative;
+}
+
+.jspVerticalBar .jspArrow
+{
+	height: 12px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+	width: 11px;
+	float: left;
+	height: 12px;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+	outline: none;
+}
+
+.jspCorner
+{
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}
